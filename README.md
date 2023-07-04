@@ -14,8 +14,13 @@ regresi linier dengan pengujian asumsinya
 Analisis regresi adalah metode yang umum digunakan untuk memperoleh fungsi prediksi untuk memprediksi nilai-nilai variabel respon Y menggunakan variabel prediktor X.
 
 ### Analisis regresi linier berganda
+Analisis regresi linier berganda terdiri dari satu variabel respon dan lebih dari satu variabel prediktor. Analisis ini digunakan untuk mengetahui pengaruh dari masing-masing variabel prediktor terhadap variabel respon, dan melihat variabel mana yang mempunyai pengaruh lebih besar.
 
 ### Uji asumsi dalam regresi linier berganda
+- uji asumsi kenormalan residual
+- uji asumsi kebebasan residual
+- uji asumsi kehomogenan variansi residual
+- uji asumsi ketiadaan multikolinieritas dalam variabel prediktor X dengan jumlah lebih dari 2
 
 ## Step by step analysis
 Ada beberapa tahapan dalam melakukan analisis regresi linier baik sederhana maupun berganda. 
