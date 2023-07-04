@@ -33,5 +33,22 @@ Ada beberapa tahapan dalam melakukan analisis regresi linier baik sederhana maup
 ## Result
 
 ## Dataset
+| **rerata penjualan** | **banyaknya pekerja** | **luas toko** |
+| ---------------- | ----------------- | --------- |
+| 7                | 17                | 7         |
+| 17               | 39                | 9         |
+| 10               | 32                | 8         |
+| 5                | 17                | 4         |
+| 7                | 25                | 5         |
+| 15               | 43                | 9         |
+| 11               | 25                | 8         |
+| 13               | 32                | 10        |
+| 19               | 48                | 12        |
+| 3                | 10                | 5         |
+| 17               | 48                | 12        |
+| 15               | 42                | 10        |
+| 14               | 36                | 10        |
+| 12               | 30                | 10        |
+| 8                | 19                | 8         |
 
 ## Links
