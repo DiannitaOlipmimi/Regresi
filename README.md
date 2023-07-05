@@ -52,3 +52,4 @@ Ada beberapa tahapan dalam melakukan analisis regresi linier baik sederhana maup
 | 8                | 19                | 8         |
 
 ## Links
+https://statistics.laerd.com/spss-tutorials/linear-regression-using-spss-statistics.php
