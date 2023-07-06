@@ -11,10 +11,13 @@ regresi linier dengan pengujian asumsinya
 ## Definition
 
 ### Analisis regresi
-Analisis regresi adalah metode yang umum digunakan untuk memperoleh fungsi prediksi untuk memprediksi nilai-nilai variabel respon Y menggunakan variabel prediktor X.
+Regresi merupakan salah satu alat statistik yang digunakan untuk mengatahui pengaruh antara dua variabel atau lebih, dimana variabel ini terbagi menjadi variabel dependen (Y) dan variabel independen (X). salah satu jenis analisis regresi yang sering digunakan adalah regresi linier.
 
-### Analisis regresi linier berganda
-Analisis regresi linier berganda terdiri dari satu variabel respon dan lebih dari satu variabel prediktor. Analisis ini digunakan untuk mengetahui pengaruh dari masing-masing variabel prediktor terhadap variabel respon, dan melihat variabel mana yang mempunyai pengaruh lebih besar.
+### Analisis regresi linier
+Analisis regresi linier merupakan analisis yang digunakan untuk melihat hubungan dua variabel yang diasumsikan memiliki hubungan yang linier (bergaris lurus). regresi linier terbagi menjadi dua, yaitu:
+1. regresi linier sederhana (simple linear regression)
+2. regresi linier berganda (multiple linear regression)
+keduanya dibedakan dengan banyaknya variabel, dimana regresi linier sederhana hanya memiliki 1 variabel dependen dan 1 variabel independen sedangkan regresi linier berganda memiliki 1 variabel dependen dan 2 atau lebih variabel independen.
 
 ### Uji asumsi dalam regresi linier berganda
 - uji asumsi kenormalan residual
@@ -33,23 +36,6 @@ Ada beberapa tahapan dalam melakukan analisis regresi linier baik sederhana maup
 ## Result
 
 ## Dataset
-| **rerata penjualan** | **banyaknya pekerja** | **luas toko** |
-| ---------------- | ----------------- | --------- |
-| 7                | 17                | 7         |
-| 17               | 39                | 9         |
-| 10               | 32                | 8         |
-| 5                | 17                | 4         |
-| 7                | 25                | 5         |
-| 15               | 43                | 9         |
-| 11               | 25                | 8         |
-| 13               | 32                | 10        |
-| 19               | 48                | 12        |
-| 3                | 10                | 5         |
-| 17               | 48                | 12        |
-| 15               | 42                | 10        |
-| 14               | 36                | 10        |
-| 12               | 30                | 10        |
-| 8                | 19                | 8         |
+
 
 ## Links
-https://statistics.laerd.com/spss-tutorials/linear-regression-using-spss-statistics.php
