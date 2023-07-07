@@ -38,9 +38,18 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 ## 📌**Result**
 
 ### 📒Regresi linier sederhana
+**menggunakan Excel**
+
+**menggunakan R/RStudio**
+
+**menggunakan Python**
 
 ### 📒Regresi linier berganda
+**menggunakan Excel**
 
+**menggunakan R/RStudio**
+
+**menggunakan Python**
 
 ## 📌**Dataset**
 
