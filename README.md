@@ -41,7 +41,6 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 [Tutorial dari Microsoft](https://support.microsoft.com/en-gb/office/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4)
 
 2. membuka tab Data pada excel > Ribbon Analysis > memilih menu Data Analysis
-![Alt text](<images/Data Analysis ToolPak.png>)
 
 3. memilih Regression sebagai analysis tools dan mengisi value cell sesuai dengan perintah dialog box
 ![Alt text](<images/dialog box regression data analysis.png>)
@@ -74,6 +73,9 @@ vif(regresi)
 ```
 
 **menggunakan Python**
+Google colab
+https://colab.research.google.com/drive/1jeNXk2dnevsDgpS5lBgTOu0HKH68HpaV?usp=sharing
+
 
 ## 📌**Result**
 
@@ -87,6 +89,7 @@ vif(regresi)
 ![Alt text](<images/regression R result.png>)
 
 **menggunakan Python**
+![Alt text](<images/regression python result.png>)
 
 ## 📌**Dataset**
 Housing Prices
