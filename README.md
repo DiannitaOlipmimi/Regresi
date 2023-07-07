@@ -73,6 +73,7 @@ vif(regresi)
 ```
 
 **menggunakan Python**
+
 Google colab
 https://colab.research.google.com/drive/1jeNXk2dnevsDgpS5lBgTOu0HKH68HpaV?usp=sharing
 
