@@ -47,6 +47,31 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 ![Alt text](<images/dialog box regression data analysis.png>)
 
 **menggunakan R/RStudio**
+- membuat model
+```r
+regresi=lm(y~x1+x2+x3+x4+x5, data = data)
+summary(regresi)
+hasil=summary(regresi)
+```
+
+- menguji asumsi
+```r
+#uji normalitas-kolmogorov-smirnov
+library(nortest)
+lillie.test(regresi$residuals)
+
+#durbin-watson untuk uji auotokorelasi
+library(lmtest)
+dwtest(regresi)
+
+#uji heterokedastisitas dengan Breusch Pagan test
+library(lmtest)
+bptest(regresi, studentize = FALSE, data=data)
+
+#uji multiko
+library(car)
+vif(regresi)
+```
 
 **menggunakan Python**
 
