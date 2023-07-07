@@ -17,6 +17,7 @@ Regresi merupakan salah satu alat statistik yang digunakan untuk mengatahui peng
 Analisis regresi linier merupakan analisis yang digunakan untuk melihat hubungan dua variabel yang diasumsikan memiliki hubungan yang linier (bergaris lurus). regresi linier terbagi menjadi dua, yaitu:
 1. regresi linier sederhana (*simple linear regression*)
 2. regresi linier berganda (*multiple linear regression*)
+
 keduanya dibedakan dengan banyaknya variabel, dimana regresi linier sederhana hanya memiliki 1 variabel dependen dan 1 variabel independen sedangkan regresi linier berganda memiliki 1 variabel dependen dan 2 atau lebih variabel independen.
 
 ### 📒Uji asumsi dalam regresi linier berganda
@@ -25,6 +26,7 @@ dikarenakan regresi linier merupakan metode yang memiliki asumsi pada variabel-v
 - uji asumsi kebebasan residual
 - uji asumsi kehomogenan variansi residual
 - uji asumsi ketiadaan multikolinieritas dalam variabel prediktor X dengan jumlah lebih dari 2
+
 apabila salah satu uji asumsi tidak terpenuhi, maka dapat dikatakan akurasi hasil prediksi atau hubungan antar variabel dalam analisis model tidak sepenuhnya benar.
 
 ### 📒Evaluasi hasil regresi linier
