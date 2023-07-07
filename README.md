@@ -1,4 +1,4 @@
-# regresi_dan_asumsinya
+# REGRESI LINIER DAN ASUMSINYA
 regresi linier dengan pengujian asumsinya
 
 ## 📌Table of contents
