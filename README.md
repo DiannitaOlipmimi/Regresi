@@ -40,8 +40,8 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 1. menginstall add-ins Data Analysis ToolPak pada Excel 
 [Tutorial dari Microsoft](https://support.microsoft.com/en-gb/office/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4)
 
-2. membuka tab Data pada excel > Ribbon Analysis > memilih menu Data Analysis!
-[Alt text](<images/Data Analysis ToolPak.png>)
+2. membuka tab Data pada excel > Ribbon Analysis > memilih menu Data Analysis
+![Alt text](<images/Data Analysis ToolPak.png>)
 
 3. memilih Regression sebagai analysis tools dan mengisi value cell sesuai dengan perintah dialog box
 ![Alt text](<images/dialog box regression data analysis.png>)
