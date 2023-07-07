@@ -55,13 +55,8 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 ### 📒Regresi linier berganda
 **menggunakan Excel**
 ![Alt text](<images/regression excel result.png>)
-- R Squared:
-- Significance F:
-- Coefficients:
-- Normal Probability Plot:
 
 ![Alt text](<images/regression excel result 2.png>)
-- Residuals:
 
 **menggunakan R/RStudio**
 
@@ -97,3 +92,5 @@ Housing Prices
 https://www.analyticsvidhya.com/blog/2021/10/everything-you-need-to-know-about-linear-regression/
 
 https://www.kaggle.com/datasets/yasserh/housing-prices-dataset 
+
+https://support.microsoft.com/en-gb/office/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4
