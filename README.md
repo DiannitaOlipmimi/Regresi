@@ -84,6 +84,7 @@ vif(regresi)
 ![Alt text](<images/regression excel result 2.png>)
 
 **menggunakan R/RStudio**
+![Alt text](<images/regression R result.png>)
 
 **menggunakan Python**
 
