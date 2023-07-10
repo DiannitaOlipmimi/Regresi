@@ -77,7 +77,7 @@ Build a regression model that can accurately predict the sale prices of houses b
 3. Develop a user-friendly interface or API to allow users to input the house features and get predicted sale prices.
 
 ## 📌**Step by step analysis**
-**menggunakan Excel**
+### 📒 **menggunakan Excel**
 1. menginstall add-ins Data Analysis ToolPak pada Excel 
 [Tutorial dari Microsoft](https://support.microsoft.com/en-gb/office/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4)
 
@@ -86,7 +86,7 @@ Build a regression model that can accurately predict the sale prices of houses b
 3. memilih Regression sebagai analysis tools dan mengisi value cell sesuai dengan perintah dialog box
 ![Alt text](<images/dialog box regression data analysis.png>)
 
-**menggunakan R/RStudio**
+### 📒 **menggunakan R/RStudio**
 - membuat model
 ```r
 regresi=lm(y~x1+x2+x3+x4+x5, data = data)
@@ -113,24 +113,22 @@ library(car)
 vif(regresi)
 ```
 
-**menggunakan Python**
+### 📒**menggunakan Python**
 
 Google colab
 https://colab.research.google.com/drive/1jeNXk2dnevsDgpS5lBgTOu0HKH68HpaV?usp=sharing
 
 
 ## 📌**Result**
-
-### 📒Regresi linier berganda
-**menggunakan Excel**
+### 📒**menggunakan Excel**
 ![Alt text](<images/regression excel result.png>)
 
 ![Alt text](<images/regression excel result 2.png>)
 
-**menggunakan R/RStudio**
+### 📒**menggunakan R/RStudio**
 ![Alt text](<images/regression R result.png>)
 
-**menggunakan Python**
+### 📒**menggunakan Python**
 ![Alt text](<images/regression python result.png>)
 
 ## 📌**Dataset**
