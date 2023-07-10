@@ -3,7 +3,7 @@ regresi linier dengan pengujian asumsinya
 
 ## 📌Table of contents
 - [Definition](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#definition)
-- [Study Case]()
+- [Study Case](https://github.com/DiannitaOlipmimi/regresi_linier#study-case)
 - [Step by Step analysis](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
 - [Result](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
 - [Dataset](https://github.com/DiannitaOlipmimi/regresi_dan_asumsinya#step-by-step-analysis)
