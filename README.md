@@ -37,21 +37,20 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 3. uji T pada variabel independennya
 
 ## 📌**Study Case**
-Title: Predicting House Prices
+**Title: Predicting House Prices**
 
-Problem Statement:
+### 📒 Problem Statement:
 A real estate agency wants to develop a model that can accurately predict the prices of houses based on various features such as the number of bedrooms, square footage, location, and other relevant factors. The agency aims to provide its clients with more accurate estimates and improve their decision-making process.
 
-Data Description:
+### 📒 Data Description:
 The agency has collected a dataset consisting of historical information on house sales. The dataset includes features such as the number of bedrooms, bathrooms, square footage, location, age of the house, and the corresponding sale prices. The dataset contains both numerical and categorical variables.
 
-Objective:
+### 📒 Objective:
 Build a regression model that can accurately predict the sale prices of houses based on the available features.
 
-Analysis Steps:
+### 📒 Analysis Steps:
 
-Exploratory Data Analysis (EDA):
-
+#### ✅ Exploratory Data Analysis (EDA):
 Perform descriptive statistics to gain insights into the dataset.
 Visualize the distribution of the target variable (sale prices) and identify any outliers.
 Explore relationships between the target variable and other features using scatter plots, correlation matrices, or other relevant visualizations.
