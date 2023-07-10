@@ -49,39 +49,32 @@ The agency has collected a dataset consisting of historical information on house
 Build a regression model that can accurately predict the sale prices of houses based on the available features.
 
 ### 📒 Analysis Steps:
-
 #### ✅ Exploratory Data Analysis (EDA):
-Perform descriptive statistics to gain insights into the dataset.
-Visualize the distribution of the target variable (sale prices) and identify any outliers.
-Explore relationships between the target variable and other features using scatter plots, correlation matrices, or other relevant visualizations.
-Handle missing data by imputing or removing records as appropriate.
-Encode categorical variables using suitable techniques (e.g., one-hot encoding or label encoding).
-Feature Engineering:
+1. Perform descriptive statistics to gain insights into the dataset.
+2. Visualize the distribution of the target variable (sale prices) and identify any outliers.
+3. Explore relationships between the target variable and other features using scatter plots, correlation matrices, or other relevant visualizations.
+4. Handle missing data by imputing or removing records as appropriate.
+5. Encode categorical variables using suitable techniques (e.g., one-hot encoding or label encoding).
 
-Create new features based on domain knowledge or feature interactions that might enhance the predictive power of the model.
-Perform feature scaling or normalization if necessary to ensure that all features are on a similar scale.
-Model Selection:
+#### ✅ Feature Engineering:
+1. Create new features based on domain knowledge or feature interactions that might enhance the predictive power of the model.
+2. Perform feature scaling or normalization if necessary to ensure that all features are on a similar scale.
 
-Split the dataset into training and testing sets (e.g., 80% for training and 20% for testing).
-Select appropriate regression algorithms for experimentation (e.g., linear regression, decision trees, random forests, or gradient boosting algorithms).
-Train and evaluate multiple models using appropriate evaluation metrics such as mean squared error (MSE) or root mean squared error (RMSE).
-Perform hyperparameter tuning using techniques like grid search or randomized search to optimize the selected models.
-Model Evaluation:
+#### ✅ Model Selection:
+1. Split the dataset into training and testing sets (e.g., 80% for training and 20% for testing).
+2. Select appropriate regression algorithms for experimentation (e.g., linear regression, decision trees, random forests, or gradient boosting algorithms).
+3. Train and evaluate multiple models using appropriate evaluation metrics such as mean squared error (MSE) or root mean squared error (RMSE).
+4. Perform hyperparameter tuning using techniques like grid search or randomized search to optimize the selected models.
 
-Assess the performance of the trained models on the testing set.
-Compare the models based on their evaluation metrics to identify the best-performing model.
-Use visualizations like scatter plots or residual plots to analyze the model's predictions and identify any patterns or trends.
-Model Deployment:
+#### ✅ Model Evaluation:
+1. Assess the performance of the trained models on the testing set.
+2. Compare the models based on their evaluation metrics to identify the best-performing model.
+3. Use visualizations like scatter plots or residual plots to analyze the model's predictions and identify any patterns or trends.
 
-Once the best-performing model is selected, retrain it on the entire dataset (training + testing).
-Save the trained model for future predictions.
-Develop a user-friendly interface or API to allow users to input the house features and get predicted sale prices.
-Model Maintenance and Monitoring:
-
-Periodically retrain the model on new data to ensure its performance remains up to date.
-Monitor the model's performance over time and reevaluate its effectiveness if necessary.
-Continuously collect feedback from users and consider incorporating new features or improvements to enhance the model's accuracy.
-By following these steps, the real estate agency can develop a regression model that accurately predicts house prices, aiding their decision-making process and providing value to their clients.
+#### ✅ Model Deployment:
+1. Once the best-performing model is selected, retrain it on the entire dataset (training + testing).
+2. Save the trained model for future predictions.
+3. Develop a user-friendly interface or API to allow users to input the house features and get predicted sale prices.
 
 ## 📌**Step by step analysis**
 **menggunakan Excel**
