@@ -84,7 +84,6 @@ Build a regression model that can accurately predict the sale prices of houses b
 2. membuka tab Data pada excel > Ribbon Analysis > memilih menu Data Analysis
 
 3. memilih Regression sebagai analysis tools dan mengisi value cell sesuai dengan perintah dialog box
-![Alt text](<images/dialog box regression data analysis.png>)
 
 ### 📒 **menggunakan R/RStudio**
 - membuat model
