@@ -58,7 +58,7 @@ membuat model regresi yang dapat memprediksi harga penjualan rumah berdasarkan v
 1. Melakukan pengecekan apakah terdapat missing data, duplicate data, dan error data
 2. Mengubah data kategorik menjadi ata numerik apabila diperlukan
 3. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
-4. Memvisualisasikan data untuk melihat pola data dengan barchart
+4. Memvisualisasikan data untuk melihat pola data
 5. Melihat adanya outlier menggunakan boxplot
 6. Mencari hubungan antar variabel menggunakan scatter plot
 
