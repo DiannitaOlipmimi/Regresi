@@ -37,44 +37,42 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 3. uji T pada variabel independennya
 
 ## 📌**Study Case**
-**Title: Predicting House Prices**
+**Memprediksi Harga Rumah Menggunakan Regresi Linier Berganda**
 
 ### 📒 Problem Statement:
-A real estate agency wants to develop a model that can accurately predict the prices of houses based on various features such as the number of bedrooms, square footage, location, and other relevant factors. The agency aims to provide its clients with more accurate estimates and improve their decision-making process.
+sebuah agensi real estate ingin membuat model yang dapat memprediksi harga rumah berdasarkan fasilitas dalam rumah seperti jumlah kamar, luas rumah, dan lain-lain. agensi ini memiliki tujuan membantu kliennya memperkirakan harga rumah dan mengembangkan proses pengambilan keputusan.
 
 ### 📒 Data Description:
-The agency has collected a dataset consisting of historical information on house sales. The dataset includes features such as the number of bedrooms, bathrooms, square footage, location, age of the house, and the corresponding sale prices. The dataset contains both numerical and categorical variables.
+data yang didapatkan merupakan data yang memiliki informasi harga-harga penjualan rumah pada tahun-tahun sebelumnya. data ini memiliki data numerik dan data kategorikal dengan variabel-variabelnya,
+- price : harga rumah
+- area : luas area rumah
+- bedrooms : jumlah kamar tidur 
+- bathrooms : jumlah kamar mandi
+- stories : jumlah lantai/tingkatan dalam satu rumah
+- parking : banyaknya kendaraan yang bisa terparkir didalam rumah
 
 ### 📒 Objective:
-Build a regression model that can accurately predict the sale prices of houses based on the available features.
+membuat model regresi yang dapat memprediksi harga penjualan rumah berdasarkan variabel yang ada
 
 ### 📒 Analysis Steps:
 #### ✅ Exploratory Data Analysis (EDA):
-1. Perform descriptive statistics to gain insights into the dataset.
-2. Visualize the distribution of the target variable (sale prices) and identify any outliers.
-3. Explore relationships between the target variable and other features using scatter plots, correlation matrices, or other relevant visualizations.
-4. Handle missing data by imputing or removing records as appropriate.
-5. Encode categorical variables using suitable techniques (e.g., one-hot encoding or label encoding).
-
-#### ✅ Feature Engineering:
-1. Create new features based on domain knowledge or feature interactions that might enhance the predictive power of the model.
-2. Perform feature scaling or normalization if necessary to ensure that all features are on a similar scale.
+1. Melakukan pengecekan apakah terdapat missing data, duplicate data, dan error data
+2. Mengubah data kategorik menjadi ata numerik apabila diperlukan
+3. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
+4. Memvisualisasikan data untuk melihat pola data dengan barchart
+5. Melihat adanya outlier menggunakan boxplot
+6. Mencari hubungan antar variabel menggunakan scatter plot
 
 #### ✅ Model Selection:
-1. Split the dataset into training and testing sets (e.g., 80% for training and 20% for testing).
-2. Select appropriate regression algorithms for experimentation (e.g., linear regression, decision trees, random forests, or gradient boosting algorithms).
-3. Train and evaluate multiple models using appropriate evaluation metrics such as mean squared error (MSE) or root mean squared error (RMSE).
-4. Perform hyperparameter tuning using techniques like grid search or randomized search to optimize the selected models.
+1. Membuat model regresi linier berganda
+2. Membuat hasil ulang menggunakan model
 
 #### ✅ Model Evaluation:
-1. Assess the performance of the trained models on the testing set.
-2. Compare the models based on their evaluation metrics to identify the best-performing model.
-3. Use visualizations like scatter plots or residual plots to analyze the model's predictions and identify any patterns or trends.
-
-#### ✅ Model Deployment:
-1. Once the best-performing model is selected, retrain it on the entire dataset (training + testing).
-2. Save the trained model for future predictions.
-3. Develop a user-friendly interface or API to allow users to input the house features and get predicted sale prices.
+1. Melakukan pengujian secara overall dan parsial
+2. Melakukan pengujian asumsi 
+3. Melihat hasil kecocokan model menggunakan indikator seperi R-Squared, RMSE, dll.
+4. Visualisasi data awal dengan data hasil model
+5. Melakukan percobaan dengan dummy variable
 
 ## 📌**Step by step analysis**
 ### 📒 **menggunakan Excel**
@@ -113,25 +111,19 @@ vif(regresi)
 ```
 
 ### 📒**menggunakan Python**
-
 Google colab
 https://colab.research.google.com/drive/1jeNXk2dnevsDgpS5lBgTOu0HKH68HpaV?usp=sharing
 
 
 ## 📌**Result**
 ### 📒**menggunakan Excel**
-![Alt text](<images/regression excel result.png>)
-
-![Alt text](<images/regression excel result 2.png>)
 
 ### 📒**menggunakan R/RStudio**
-![Alt text](<images/regression R result.png>)
 
 ### 📒**menggunakan Python**
-![Alt text](<images/regression python result.png>)
 
 ## 📌**Dataset**
-Housing Prices
+Housing Prices (5 data teratas)
 | price    | area  | bedrooms | bathrooms | stories | parking |
 | -------- | ----- | -------- | --------- | ------- | ------- |
 | 13300000 | 7420  | 4        | 2         | 3       | 2       |
@@ -139,22 +131,7 @@ Housing Prices
 | 12250000 | 9960  | 3        | 2         | 2       | 2       |
 | 12215000 | 7500  | 4        | 2         | 2       | 3       |
 | 11410000 | 7420  | 4        | 1         | 2       | 2       |
-| 10850000 | 7500  | 3        | 3         | 1       | 2       |
-| 10150000 | 8580  | 4        | 3         | 4       | 2       |
-| 10150000 | 16200 | 5        | 3         | 2       | 0       |
-| 9870000  | 8100  | 4        | 1         | 2       | 2       |
-| 9800000  | 5750  | 3        | 2         | 4       | 1       |
-| 9800000  | 13200 | 3        | 1         | 2       | 2       |
-| 9681000  | 6000  | 4        | 3         | 2       | 2       |
-| 9310000  | 6550  | 4        | 2         | 2       | 1       |
-| 9240000  | 3500  | 4        | 2         | 2       | 2       |
-| 9240000  | 7800  | 3        | 2         | 2       | 0       |
-| 9100000  | 6000  | 4        | 1         | 2       | 2       |
-| 9100000  | 6600  | 4        | 2         | 2       | 1       |
-| 8960000  | 8500  | 3        | 2         | 4       | 2       |
-| 8890000  | 4600  | 3        | 2         | 2       | 2       |
-| .  | .  | .        | .         | .       | .       |
-| 1750000  | 3850  | 3        | 1         | 2       | 0       |
+
 
 ## 📌**Links**
 https://www.analyticsvidhya.com/blog/2021/10/everything-you-need-to-know-about-linear-regression/
