@@ -104,6 +104,21 @@ vif(regresi)
 Google colab
 https://colab.research.google.com/drive/1jeNXk2dnevsDgpS5lBgTOu0HKH68HpaV?usp=sharing
 
+```python
+regr = linear_model.LinearRegression()
+regr.fit(X, y)
+
+print('Intercept: \n', regr.intercept_)
+print('Coefficients: \n', regr.coef_)
+
+x = sm.add_constant(X)
+
+model = sm.OLS(y, X).fit()
+predictions = model.predict(X)
+
+print_model = model.summary()
+print(print_model)
+```
 
 ## 📌**Result**
 ### 📒**menggunakan Excel**
