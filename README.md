@@ -32,16 +32,38 @@ ketepatan hasil regresi linier dapat diketahui dengan menggunakan:
 ### **Memprediksi Harga Rumah Menggunakan Regresi Linier Berganda**
 
 ### 📒 Deskripsi Masalah:
-sebuah agensi real estate ingin membuat model yang dapat memprediksi harga rumah berdasarkan fasilitas dalam rumah seperti jumlah kamar, luas rumah, dan lain-lain. agensi ini memiliki tujuan membantu kliennya memperkirakan harga rumah dan mengembangkan proses pengambilan keputusan.
+Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
+
+With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
 
 ### 📒 Data dan Variabel:
-data yang didapatkan merupakan data yang memiliki informasi harga-harga penjualan rumah pada tahun-tahun sebelumnya. data ini memiliki data numerik dan data kategorikal dengan variabel-variabelnya,
-- *price* : harga rumah
-- *area* : luas area rumah
-- *bedrooms* : jumlah kamar tidur 
-- *bathrooms* : jumlah kamar mandi
-- *stories* : jumlah lantai/tingkatan dalam satu rumah
-- *parking* : banyaknya kendaraan yang bisa terparkir didalam rumah
+SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
+MSSubClass: The building class
+LotArea: Lot size in square feet
+Neighborhood: Physical locations within Ames city limits
+HouseStyle: Style of dwelling
+OverallQual: Overall material and finish quality
+OverallCond: Overall condition rating
+YearBuilt: Original construction date
+RoofStyle: Type of roof
+ExterQual: Exterior material quality
+BsmtQual: Height of the basement
+TotalBsmtSF: Total square feet of basement area
+CentralAir: Central air conditioning
+Electrical: Electrical system
+GrLivArea: Above grade (ground) living area square feet
+FullBath: Full bathrooms above grade
+Bedroom: Number of bedrooms above basement level
+Kitchen: Number of kitchens
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
+Fireplaces: Number of fireplaces
+GarageCars: Size of garage in car capacity
+GarageArea: Size of garage in square feet
+PoolArea: Pool area in square feet
+MoSold: Month Sold
+YrSold: Year Sold
+SaleType: Type of sale
+SaleCondition: Condition of sale
 
 ### 📒 Tujuan:
 membuat model regresi yang dapat memprediksi harga penjualan rumah berdasarkan variabel yang ada
