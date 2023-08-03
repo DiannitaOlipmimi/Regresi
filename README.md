@@ -37,17 +37,17 @@ Ask a home buyer to describe their dream house, and they probably won't begin wi
 With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
 
 ### 📒 Data dan Variabel:
-SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
-MSSubClass: The building class
-LotArea: Lot size in square feet
-Neighborhood: Physical locations within Ames city limits
-HouseStyle: Style of dwelling
-OverallQual: Overall material and finish quality
-OverallCond: Overall condition rating
-YearBuilt: Original construction date
-RoofStyle: Type of roof
-ExterQual: Exterior material quality
-BsmtQual: Height of the basement
+- `SalePrice`: the property's sale price in dollars. This is the target variable that you're trying to predict.
+- `MSSubClass: The building class
+- `LotArea: Lot size in square feet
+- `Neighborhood: Physical locations within Ames city limits
+- `HouseStyle: Style of dwelling
+- `OverallQual: Overall material and finish quality
+- `OverallCond: Overall condition rating
+- `YearBuilt: Original construction date
+- `RoofStyle: Type of roof
+- `ExterQual: Exterior material quality
+- `BsmtQual: Height of the basement
 TotalBsmtSF: Total square feet of basement area
 CentralAir: Central air conditioning
 Electrical: Electrical system
