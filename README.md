@@ -51,6 +51,7 @@ Membantuk model regresi dari data yang tersedia
 
 ### ⛳Dataset dan Variabel
 1. Data awal dataset personal medical cost
+
 | age | sex    | bmi    | children | smoker | region    | charges      |
 |-----|--------|--------|----------|--------|-----------|--------------|
 | 19  | female | 27.9   | 0        | yes    | southwest | 16884.924    |
