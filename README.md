@@ -9,7 +9,8 @@
 ## 📌**Definisi**
 ### 📒Analisis Regresi
 analisis regresi merupakan salah satu teknik statistik dalam mencari hubungan antar variabel, dimana variabel yang digunakan terbagi menjadi variabel dependen (y) dan variabel independen (x). variabel dependen merupakan variabel yang dipengaruhi oleh variabel independen, contoh kasus:
-nilai ujian mahasiswa (y) dan lama waktu belajar semalam sebelumnya (X)
+
+nilai ujian mahasiswa (y) dan lama waktu belajar semalam sebelumnya (x)
 
 analisis regresi memiliki beberapa tujuan, yaitu:
 - Prediction
