@@ -49,11 +49,11 @@ Membantuk model regresi dari data yang tersedia
     > names(data)
     [1] "age"      "sex"      "bmi"      "children" "smoker"   "region"   "charges" 
 
-       # missing value 
-       sum(is.na(data)) # total keseluruhan NA bila ada
+    # missing value 
+    > sum(is.na(data)) # total keseluruhan NA bila ada
     [1] 0
 
-    colSums(is.na(data)) # total NA per kolom
+    > colSums(is.na(data)) # total NA per kolom
      age      sex      bmi children   smoker   region  charges 
        0        0        0        0        0        0        0  
         
@@ -61,6 +61,28 @@ Membantuk model regresi dari data yang tersedia
     ```
 
     dari hasil yang didapatkan, diketahui dimensi data sebanyak 7 kolom dan 1338 baris. diketahui pula bahwa data personal medical cost tidak memiliki nilai NA atau nilai kosong. 
+
+    ```R
+    > tab1(data$children, sort.group = "decreasing", cum.percent = TRUE, graph = FALSE)
+    data$children : 
+            Frequency Percent Cum. percent
+    0             574    42.9         42.9
+    1             324    24.2         67.1
+    2             240    17.9         85.1
+    3             157    11.7         96.8
+    4              25     1.9         98.7
+    5              18     1.3        100.0
+    Total      1338   100.0        100.0
+    > tab1(data$region, sort.group = "decreasing", cum.percent = TRUE, graph = FALSE)
+    data$region : 
+            Frequency Percent Cum. percent
+    southeast       364    27.2         27.2
+    southwest       325    24.3         51.5
+    northwest       325    24.3         75.8
+    northeast       324    24.2        100.0
+    Total        1338   100.0        100.0
+    ```
+    melihat one-way tabulation untuk mengetahui frekuensi dari variabel `children` dan `region`
 
 3. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
 
@@ -98,6 +120,18 @@ Membantuk model regresi dari data yang tersedia
     Hasil Deskriptif Statistik yang didapatkan dapat digunakan sebagai langkah awal identifikasi data, dimana terlihat data personal medical cost memiliki nilai `charges` paling tinggi pada nilai $63,770 sedangkan nilai paling rendah pada $1,122 dengan nilai standar deviasi sebesar  1.21.
 
 4. Memvisualisasikan data untuk melihat pola data
+
+    ![Alt text](Rplot01.png)
+    
+    Scatter plot Charges VS BMI: data memiliki pola positif pada data-data dengan nilai `BMI` tinggi dan memiliki status YES pada variabel `smoker`. artinya apabila seseorang memiliki status perokok, semakin tinggi berat badan maka biaya atau `charges` yang harus dibayarkan semakin tinggi pula.
+
+    ![Alt text](Rplot02.png)
+
+    Scatter plot Charges VS Children: data terbagi menjadi 5 kategori sesuai dengan banyaknya anak yang dimiliki. pada data ini tidak terdapat pola yang pasti sehingga biaya atau `charges` dari rumah sakit tidak bergantung pada jumlah anak.
+
+    ![Alt text](Rplot03.png)
+    Scatter plot Charges VS Age: dari hasil yang terbentuk terlihat pola positif dimana semakin tua seseorang (`age`) maka semakin tinggi pula biaya atau `charges` yang harus dibayar. dalam plot ini juga terlihat bahwa region tidak mempengaruhi biaya.
+
 5. Melihat adanya outlier menggunakan boxplot
 6. Menghapus outlier
 7. Mengubah data kategorik menjadi ata numerik apabila diperlukan
