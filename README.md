@@ -10,9 +10,9 @@ Machine Learning with R by Brett Lantz is a book that provides an introduction t
 Membantuk model regresi dari data yang tersedia
 
 ## Table of contents
-- [🧵Dataset dan Variabel](https://github.com/DiannitaOlipmimi/Regresi#dataset-dan-variabel)
-- [🧵Result](https://github.com/DiannitaOlipmimi/Regresi#result)
-- [🧵Links](https://github.com/DiannitaOlipmimi/Regresi#link)
+- [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/Regresi#dataset-dan-variabel)
+- [Result](https://github.com/DiannitaOlipmimi/Regresi#result)
+- [Links](https://github.com/DiannitaOlipmimi/Regresi#link)
 
 ## 🧵Dataset dan Variabel
 **📒Data awal dataset personal medical cost**
@@ -38,6 +38,11 @@ Membantuk model regresi dari data yang tersedia
 **📒Langkah Analisis:**
 ✅ *Exploratory Data Analysis* (EDA):
 1. Melakukan pengecekan apakah terdapat missing data, duplicate data, dan error data
+
+![Alt text](<images/EDA 1.png>)
+
+dari hasil yang didapatkan, diketahui dimensi data sebanyak 7 kolom dan 1338 baris. diketahui pula bahwa data personal medical cost tidak memiliki nilai NA atau nilai kosong. 
+
 2. Mengubah data kategorik menjadi ata numerik apabila diperlukan
 3. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
 4. Memvisualisasikan data untuk melihat pola data
@@ -50,10 +55,9 @@ Membantuk model regresi dari data yang tersedia
 
 ✅ Evaluasi:
 1. Melakukan pengujian secara overall dan parsial
-2. Melakukan pengujian asumsi 
-3. Melihat hasil kecocokan model menggunakan indikator seperi R-Squared, RMSE, dll.
-4. Visualisasi data awal dengan data hasil model
-5. Melakukan percobaan dengan dummy variable
+2. Melihat hasil kecocokan model menggunakan indikator seperi R-Squared, RMSE, dll.
+3. Visualisasi data awal dengan data hasil model
+4. Melakukan percobaan dengan dummy variable
 
 ## 🧵**Link**
 📊**Kaggle dataset**
