@@ -228,7 +228,8 @@ Membantuk model regresi dari data yang tersedia
     dari hasil regresi linier, didapatkan moodel sebagai berikut
 
     ```math
-    Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + (479.37*Children) + (23820.43*Smoker) + (-353.64*region) + errors
+    Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + 
+    (479.37*Children) + (23820.43*Smoker) + (-353.64*region) + errors
     ```
     
 
