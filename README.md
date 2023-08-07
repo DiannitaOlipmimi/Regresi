@@ -40,6 +40,7 @@ Membantuk model regresi dari data yang tersedia
 
 ✅ *Exploratory Data Analysis* (EDA):
 1. Melakukan pengecekan apakah terdapat missing data, duplicate data, dan error data
+
     ```R
     # pengecekan data
     > dim(data)
@@ -47,16 +48,16 @@ Membantuk model regresi dari data yang tersedia
 
     > names(data)
     [1] "age"      "sex"      "bmi"      "children" "smoker"   "region"   "charges" 
-> 
->   # missing value 
->   sum(is.na(data)) # total keseluruhan NA bila ada
+
+       # missing value 
+       sum(is.na(data)) # total keseluruhan NA bila ada
     [1] 0
 
->   colSums(is.na(data)) # total NA per kolom
+    colSums(is.na(data)) # total NA per kolom
      age      sex      bmi children   smoker   region  charges 
-       0        0        0        0        0        0        0 
-> 
->   data=na.omit(data) # menghapus NA
+       0        0        0        0        0        0        0  
+        
+    >   data=na.omit(data) # menghapus NA
     ```
 
     dari hasil yang didapatkan, diketahui dimensi data sebanyak 7 kolom dan 1338 baris. diketahui pula bahwa data personal medical cost tidak memiliki nilai NA atau nilai kosong. 
