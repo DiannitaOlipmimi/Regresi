@@ -170,7 +170,46 @@ Membantuk model regresi dari data yang tersedia
     $$lower limit = Q1 - IQR * 1.5$$
 
 7. Menghapus outlier
+
+    ```R
+    > # mencari limit outlier
+    > upper_limit_bmi = quantile(data$bmi,0.75)+1.5*IQR(data$bmi)
+    > upper_limit_bmi
+    75% 
+    47.29 
+    > lower_limit_bmi = quantile(data$bmi,0.25)-1.5*IQR(data$bmi)
+    > lower_limit_bmi
+    25% 
+    13.7 
+    > 
+    > # mencari letak outlier pada data
+    > outlier=data[!(data$bmi > lower_limit_bmi & data$bmi < upper_limit_bmi ),]
+    > outlier
+        age sex   bmi children smoker region   charges
+    117   58   2 49.06        0      1      3 11381.325
+    287   46   1 48.07        2      1      1  9432.925
+    402   47   2 47.52        1      1      3  8083.920
+    544   54   1 47.41        0      2      3 63770.428
+    848   23   2 50.38        1      1      3  2438.055
+    861   37   1 47.60        2      2      4 46113.511
+    1048  22   2 52.58        1      2      3 44501.398
+    1089  52   2 47.74        1      1      3  9748.911
+    1318  18   2 53.13        0      1      3  1163.463
+    > 
+    > # membuat data baru tanpa outlier
+    > new_data=data[!(data$bmi < lower_limit_bmi & data$bmi > upper_limit_bmi ),]
+    > head(new_data)
+    age sex    bmi children smoker region   charges
+    1  19   1 27.900        0      2      4 16884.924
+    2  18   2 33.770        1      1      3  1725.552
+    3  28   2 33.000        3      1      3  4449.462
+    4  33   2 22.705        0      1      2 21984.471
+    5  32   2 28.880        0      1      2  3866.855
+    6  31   1 25.740        0      1      3  3756.622
+    ```
+
 8. Mencari hubungan antar variabel menggunakan matriks scatter plot
+    ![Alt text](Rplot08.png)
 
 
 ✅ Analisis:
