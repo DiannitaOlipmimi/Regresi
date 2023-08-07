@@ -2,9 +2,11 @@
 **Medical Cost Personal Datasets**
 
 **⛳Deskripsi Masalah**
+
 Machine Learning with R by Brett Lantz is a book that provides an introduction to machine learning using R. As far as I can tell, Packt Publishing does not make its datasets available online unless you buy the book and create a user account which can be a problem if you are checking the book out from the library or borrowing the book from a friend. All of these datasets are in the public domain but simply needed some cleaning up and recoding to match the format in the book.
 
 **📌Tujuan Analisis**
+
 Membantuk model regresi dari data yang tersedia
 
 ## Table of contents
@@ -13,7 +15,7 @@ Membantuk model regresi dari data yang tersedia
 - [🧵Links](https://github.com/DiannitaOlipmimi/Regresi#link)
 
 ## 🧵Dataset dan Variabel
-### 📒Data awal dataset personal medical cost
+**📒Data awal dataset personal medical cost**
 
 | age | sex    | bmi    | children | smoker | region    | charges      |
 |-----|--------|--------|----------|--------|-----------|--------------|
@@ -23,7 +25,7 @@ Membantuk model regresi dari data yang tersedia
 | 33  | male   | 22.705 | 0        | no     | northwest | 21984.47061  |
 | 32  | male   | 28.88  | 0        | no     | northwest | 3866.8552    |
 
-### 📒Variabel dalam data
+**📒Variabel dalam data**
 - `age`: age of primary beneficiary
 - `sex`: insurance contractor gender, female, male
 - `bmi`: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height, objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9
@@ -33,7 +35,7 @@ Membantuk model regresi dari data yang tersedia
 - `charges`: Individual medical costs billed by health insurance
 
 ## 🧵**Result**
-### 📒Langkah Analisis:
+**📒Langkah Analisis:**
 ✅ *Exploratory Data Analysis* (EDA):
 1. Melakukan pengecekan apakah terdapat missing data, duplicate data, dan error data
 2. Mengubah data kategorik menjadi ata numerik apabila diperlukan
