@@ -55,8 +55,6 @@ Membantuk model regresi dari data yang tersedia
     > colSums(is.na(data)) # total NA per kolom
      age      sex      bmi children   smoker   region  charges 
        0        0        0        0        0        0        0  
-        
-    >   data=na.omit(data) # menghapus NA
     ```
 
     dari hasil yang didapatkan, diketahui dimensi data sebanyak 7 kolom dan 1338 baris. diketahui pula bahwa data personal medical cost tidak memiliki nilai NA atau nilai kosong. 
@@ -88,15 +86,6 @@ Membantuk model regresi dari data yang tersedia
     ```R
     # Statistik Deskriptif 
     # install.packages("pastecs")
-    > summary(data)
-        age             sex             bmi           children         smoker          region         charges     
-    Min.   :18.00   Min.   :1.000   Min.   :15.96   Min.   :0.000   Min.   :1.000   Min.   :1.000   Min.   : 1122  
-    1st Qu.:27.00   1st Qu.:1.000   1st Qu.:26.30   1st Qu.:0.000   1st Qu.:1.000   1st Qu.:2.000   1st Qu.: 4740  
-    Median :39.00   Median :2.000   Median :30.40   Median :1.000   Median :1.000   Median :3.000   Median : 9382  
-    Mean   :39.21   Mean   :1.505   Mean   :30.66   Mean   :1.095   Mean   :1.205   Mean   :2.516   Mean   :13270  
-    3rd Qu.:51.00   3rd Qu.:2.000   3rd Qu.:34.69   3rd Qu.:2.000   3rd Qu.:1.000   3rd Qu.:3.000   3rd Qu.:16640  
-    Max.   :64.00   Max.   :2.000   Max.   :53.13   Max.   :5.000   Max.   :2.000   Max.   :4.000   Max.   :63770    
-    
     > library(pastecs)
     > stat.desc(data)
                         age          sex          bmi     children       smoker       region      charges
@@ -195,17 +184,6 @@ Membantuk model regresi dari data yang tersedia
     1048  22   2 52.58        1      2      3 44501.398
     1089  52   2 47.74        1      1      3  9748.911
     1318  18   2 53.13        0      1      3  1163.463
-    > 
-    > # membuat data baru tanpa outlier
-    > new_data=data[!(data$bmi < lower_limit_bmi & data$bmi > upper_limit_bmi ),]
-    > head(new_data)
-    age sex    bmi children smoker region   charges
-    1  19   1 27.900        0      2      4 16884.924
-    2  18   2 33.770        1      1      3  1725.552
-    3  28   2 33.000        3      1      3  4449.462
-    4  33   2 22.705        0      1      2 21984.471
-    5  32   2 28.880        0      1      2  3866.855
-    6  31   1 25.740        0      1      3  3756.622
     ```
 
 8. Mencari hubungan antar variabel menggunakan matriks scatter plot
@@ -215,13 +193,41 @@ Membantuk model regresi dari data yang tersedia
 
 ✅ Analisis:
 1. Membuat model regresi linier berganda
-2. Membuat hasil ulang menggunakan model
 
-✅ Evaluasi:
-1. Melakukan pengujian secara overall dan parsial
-2. Melihat hasil kecocokan model menggunakan indikator seperi R-Squared, RMSE, dll.
-3. Visualisasi data awal dengan data hasil model
-4. Melakukan percobaan dengan dummy variable
+    ```R
+    > # linear regression
+    > #analisis regresi berganda
+    > regresi=lm(charges~age+sex+bmi+children+smoker+region,data = data)
+    > summary(regresi)
+
+    Call:
+    lm(formula = charges ~ age + sex + bmi + children + smoker + 
+        region, data = data)
+
+    Residuals:
+    Min     1Q Median     3Q    Max 
+    -11343  -2807  -1017   1408  29752 
+
+    Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+    (Intercept) -35151.14    1174.41 -29.931  < 2e-16 ***
+    age            257.29      11.89  21.647  < 2e-16 ***
+    sex           -131.11     332.81  -0.394 0.693681    
+    bmi            332.57      27.72  11.997  < 2e-16 ***
+    children       479.37     137.64   3.483 0.000513 ***
+    smoker       23820.43     411.84  57.839  < 2e-16 ***
+    region        -353.64     151.93  -2.328 0.020077 *  
+    ---
+    Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+    Residual standard error: 6060 on 1331 degrees of freedom
+    Multiple R-squared:  0.7507,	Adjusted R-squared:  0.7496 
+    F-statistic: 668.1 on 6 and 1331 DF,  p-value: < 2.2e-16
+    ```
+
+    dari hasil regresi linier, didapatkan moodel sebagai berikut
+
+    $$Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + (479.37*Children) + (23820.43*Smoker) + (-353.64*region) + errors $$
 
 ## 🧵**Link**
 📊**Kaggle dataset**
