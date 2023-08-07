@@ -1,5 +1,4 @@
-# ANALISIS REGRESI
-**Medical Cost Personal Datasets**
+# Linear Regession on Medical Cost Personal Datasets
 
 **⛳Deskripsi Masalah**
 
@@ -132,9 +131,45 @@ Membantuk model regresi dari data yang tersedia
     ![Alt text](Rplot03.png)
     Scatter plot Charges VS Age: dari hasil yang terbentuk terlihat pola positif dimana semakin tua seseorang (`age`) maka semakin tinggi pula biaya atau `charges` yang harus dibayar. dalam plot ini juga terlihat bahwa region tidak mempengaruhi biaya.
 
-5. Melihat adanya outlier menggunakan boxplot
-6. Menghapus outlier
-7. Mengubah data kategorik menjadi ata numerik apabila diperlukan
+    ![Alt text](Rplot04.png)
+    Bar plot Children: terlihat pada plot bahwa pasien yang datang memiliki 0 pada nilai `children` atau tidak memiliki anak, sedangkan jenis kelamin pasien pada masing-masing jumlah anak berbanding sama atau tidak ada perbedaan antara laki-laki dan perempuan
+
+    ![Alt text](Rplot05.png)
+    Bar plot Smoker: terlihat lebih banyak pasien dengan status tidak merokok dibandingkan yang merokok.
+
+    ![Alt text](Rplot06.png)
+    Bar plot Sex: jumlah pasien laki-laki dan perempuan hampir sama dengan jumlah pasien yang paling banyak adalah laki-laki.
+
+5. Mengubah data kategorik menjadi ata numerik apabila diperlukan
+
+    ```R
+    > # Data Wrangling
+    > # Encoding data
+    > unique(data$sex)
+    [1] "female" "male"  
+    > unique(data$smoker)
+    [1] "yes" "no" 
+    > unique(data$region)
+    [1] "southwest" "southeast" "northwest" "northeast"
+    > 
+    > data$sex = as.numeric(factor(data$sex))
+    > data$smoker = as.numeric(factor(data$smoker))
+    > data$region = as.numeric(factor(data$region))
+    ```
+
+    dikarenakan terdapat variabel yang memiliki tipe data kategorik eperti variabel `Sex`, `Smoker`, dan `Region`, maka silakukan data encoding untuk mengubah masing-masing nilai unik pada variabel menjai numberik
+
+6. Melihat adanya outlier menggunakan boxplot
+
+    ![Alt text](Rplot07.png)
+
+    dapat disimpulkan aanya nilai outlier atau nilai ekstrem paa variabel `BMI` dan `Charges`, untuk itu dilakukan perhitungan untuk menentukan batas bawah dan batas atas data dalam variabel dapat dikatakan ekstrem. salah satu caranya adalah dengan menggunakan teknik IQR atau Interquartile Range. teknik ini memiliki rumus,
+
+    $$IQR = Q1 - Q3$$
+    $$upper limit = Q3 + IQR * 1.5$$
+    $$lower limit = Q1 - IQR * 1.5$$
+
+7. Menghapus outlier
 8. Mencari hubungan antar variabel menggunakan matriks scatter plot
 
 
