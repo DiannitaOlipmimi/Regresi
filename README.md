@@ -120,24 +120,24 @@ Membantuk model regresi dari data yang tersedia
 
 4. Memvisualisasikan data untuk melihat pola data
 
-    ![Alt text](Rplot01.png)
+![Alt text](Rplot01.png)
     
     Scatter plot Charges VS BMI: data memiliki pola positif pada data-data dengan nilai `BMI` tinggi dan memiliki status YES pada variabel `smoker`. artinya apabila seseorang memiliki status perokok, semakin tinggi berat badan maka biaya atau `charges` yang harus dibayarkan semakin tinggi pula.
 
-    ![Alt text](Rplot02.png)
+![Alt text](Rplot02.png)
 
     Scatter plot Charges VS Children: data terbagi menjadi 5 kategori sesuai dengan banyaknya anak yang dimiliki. pada data ini tidak terdapat pola yang pasti sehingga biaya atau `charges` dari rumah sakit tidak bergantung pada jumlah anak.
 
-    ![Alt text](Rplot03.png)
+![Alt text](Rplot03.png)
     Scatter plot Charges VS Age: dari hasil yang terbentuk terlihat pola positif dimana semakin tua seseorang (`age`) maka semakin tinggi pula biaya atau `charges` yang harus dibayar. dalam plot ini juga terlihat bahwa region tidak mempengaruhi biaya.
 
-    ![Alt text](Rplot04.png)
+![Alt text](Rplot04.png)
     Bar plot Children: terlihat pada plot bahwa pasien yang datang memiliki 0 pada nilai `children` atau tidak memiliki anak, sedangkan jenis kelamin pasien pada masing-masing jumlah anak berbanding sama atau tidak ada perbedaan antara laki-laki dan perempuan
 
-    ![Alt text](Rplot05.png)
+![Alt text](Rplot05.png)
     Bar plot Smoker: terlihat lebih banyak pasien dengan status tidak merokok dibandingkan yang merokok.
 
-    ![Alt text](Rplot06.png)
+![Alt text](Rplot06.png)
     Bar plot Sex: jumlah pasien laki-laki dan perempuan hampir sama dengan jumlah pasien yang paling banyak adalah laki-laki.
 
 5. Mengubah data kategorik menjadi ata numerik apabila diperlukan
@@ -161,7 +161,7 @@ Membantuk model regresi dari data yang tersedia
 
 6. Melihat adanya outlier menggunakan boxplot
 
-    ![Alt text](Rplot07.png)
+![Alt text](Rplot07.png)
 
     dapat disimpulkan aanya nilai outlier atau nilai ekstrem paa variabel `BMI` dan `Charges`, untuk itu dilakukan perhitungan untuk menentukan batas bawah dan batas atas data dalam variabel dapat dikatakan ekstrem. salah satu caranya adalah dengan menggunakan teknik IQR atau Interquartile Range. teknik ini memiliki rumus,
 
@@ -209,7 +209,8 @@ Membantuk model regresi dari data yang tersedia
     ```
 
 8. Mencari hubungan antar variabel menggunakan matriks scatter plot
-    ![Alt text](Rplot08.png)
+
+![Alt text](Rplot08.png)
 
 
 ✅ Analisis:
