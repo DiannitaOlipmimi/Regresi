@@ -39,9 +39,8 @@ Membantuk model regresi dari data yang tersedia
 ✅ *Exploratory Data Analysis* (EDA):
 1. Melakukan pengecekan apakah terdapat missing data, duplicate data, dan error data
 
-![Alt text](<images/EDA 1.png>)
 
-dari hasil yang didapatkan, diketahui dimensi data sebanyak 7 kolom dan 1338 baris. diketahui pula bahwa data personal medical cost tidak memiliki nilai NA atau nilai kosong. 
+    dari hasil yang didapatkan, diketahui dimensi data sebanyak 7 kolom dan 1338 baris. diketahui pula bahwa data personal medical cost tidak memiliki nilai NA atau nilai kosong. 
 
 2. Mengubah data kategorik menjadi ata numerik apabila diperlukan
 3. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
