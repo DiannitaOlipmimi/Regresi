@@ -81,7 +81,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
     ```
     melihat one-way tabulation untuk mengetahui frekuensi dari variabel `children` dan `region`
 
-3. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
+2. Melakukan deskriptif statistik pada data (melihat rata-rata, median, dan nilai lainnya)
 
     ```R
     # Statistik Deskriptif 
@@ -105,12 +105,12 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
     coef.var     3.583531e-01 3.322808e-01 1.988751e-01 1.100989e+00 3.350761e-01 4.391967e-01 9.125566e-01
     ```
 
-    Hasil Deskriptif Statistik yang didapatkan dapat digunakan sebagai langkah awal identifikasi data, dimana terlihat data personal medical cost memiliki nilai `charges` paling tinggi pada nilai 63,770 sedangkan nilai paling rendah pada 1,122 dengan nilai standar deviasi sebesar  1.21.
+    Hasil Deskriptif Statistik yang didapatkan dapat digunakan sebagai langkah awal identifikasi data, dimana terlihat data personal medical cost memiliki nilai `charges` paling tinggi pada nilai $63,770 sedangkan nilai paling rendah pada $1,122 dengan nilai standar deviasi sebesar  1.21.
 
-4. Memvisualisasikan data untuk melihat pola data
+3. Memvisualisasikan data untuk melihat pola data
 
 ![Alt text](Rplot01.png)
-    
+
     Scatter plot Charges VS BMI: data memiliki pola positif pada data-data dengan nilai `BMI` tinggi dan memiliki status YES pada variabel `smoker`. artinya apabila seseorang memiliki status perokok, semakin tinggi berat badan maka biaya atau `charges` yang harus dibayarkan semakin tinggi pula.
 
 ![Alt text](Rplot02.png)
@@ -129,7 +129,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
 ![Alt text](Rplot06.png)
     Bar plot Sex: jumlah pasien laki-laki dan perempuan hampir sama dengan jumlah pasien yang paling banyak adalah laki-laki.
 
-5. Mengubah data kategorik menjadi ata numerik apabila diperlukan
+4. Mengubah data kategorik menjadi ata numerik apabila diperlukan
 
     ```R
     > # Data Wrangling
@@ -148,7 +148,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
 
     dikarenakan terdapat variabel yang memiliki tipe data kategorik eperti variabel `Sex`, `Smoker`, dan `Region`, maka silakukan data encoding untuk mengubah masing-masing nilai unik pada variabel menjai numberik
 
-6. Melihat adanya outlier menggunakan boxplot
+5. Melihat adanya outlier menggunakan boxplot
 
 ![Alt text](Rplot07.png)
 
@@ -158,7 +158,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
     $$upper limit = Q3 + IQR * 1.5$$
     $$lower limit = Q1 - IQR * 1.5$$
 
-7. Menghapus outlier
+6. Menghapus outlier
 
     ```R
     > # mencari limit outlier
@@ -186,7 +186,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
     1318  18   2 53.13        0      1      3  1163.463
     ```
 
-8. Mencari hubungan antar variabel menggunakan matriks scatter plot
+7. Mencari hubungan antar variabel menggunakan matriks scatter plot
 
 ![Alt text](Rplot08.png)
 
