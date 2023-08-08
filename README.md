@@ -1,6 +1,7 @@
 # Linear Regession on Medical Cost Personal Datasets
 
 **⛳Deskripsi Masalah**
+
 Medical cost Personal dataset merupakan data yang bersifat open database. data ini didapatkan dari Kaggle.
 
 
@@ -226,10 +227,10 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
 
     dari hasil regresi linier, didapatkan moodel sebagai berikut
 
-    ```math
+    $$
     Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + \\
     (479.37*Children) + (23820.43*Smoker) + (-353.64*region) + errors
-    ```
+    $$
 
     dari data yang ada dapat diambil beberapa kesimpulan seperti,
     - Multiple R-Squared yang dihasilkan oleh model sebanyak 0.75, artinya dari variabel age, sex, BMI, children, smoker, dan region telah menjelaskan pengaruhnya sebanyak 75% pada biaya rumah sakit.
