@@ -1,12 +1,12 @@
 # Linear Regession on Medical Cost Personal Datasets
 
 **⛳Deskripsi Masalah**
+Medical cost Personal dataset merupakan data yang bersifat open database. data ini didapatkan dari Kaggle.
 
-Machine Learning with R by Brett Lantz is a book that provides an introduction to machine learning using R. As far as I can tell, Packt Publishing does not make its datasets available online unless you buy the book and create a user account which can be a problem if you are checking the book out from the library or borrowing the book from a friend. All of these datasets are in the public domain but simply needed some cleaning up and recoding to match the format in the book.
 
 **📌Tujuan Analisis**
 
-Membantuk model regresi dari data yang tersedia
+Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biaya rumah sakit berdasarkan 6 variabel lain pada data.
 
 ## Table of contents
 - [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/Regresi#dataset-dan-variabel)
@@ -105,7 +105,7 @@ Membantuk model regresi dari data yang tersedia
     coef.var     3.583531e-01 3.322808e-01 1.988751e-01 1.100989e+00 3.350761e-01 4.391967e-01 9.125566e-01
     ```
 
-    Hasil Deskriptif Statistik yang didapatkan dapat digunakan sebagai langkah awal identifikasi data, dimana terlihat data personal medical cost memiliki nilai `charges` paling tinggi pada nilai $63,770 sedangkan nilai paling rendah pada $1,122 dengan nilai standar deviasi sebesar  1.21.
+    Hasil Deskriptif Statistik yang didapatkan dapat digunakan sebagai langkah awal identifikasi data, dimana terlihat data personal medical cost memiliki nilai `charges` paling tinggi pada nilai 63,770 sedangkan nilai paling rendah pada 1,122 dengan nilai standar deviasi sebesar  1.21.
 
 4. Memvisualisasikan data untuk melihat pola data
 
@@ -229,8 +229,14 @@ Membantuk model regresi dari data yang tersedia
 
     ```math
     Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + 
+
     (479.37*Children) + (23820.43*Smoker) + (-353.64*region) + errors
     ```
+
+    dari data yang ada dapat diambil beberapa kesimpulan seperti,
+    - Multiple R-Squared yang dihasilkan oleh model sebanyak 0.75, artinya dari variabel age, sex, BMI, children, smoker, dan region telah menjelaskan pengaruhnya sebanyak 75% pada biaya rumah sakit.
+    - variabel yang paling berpengaruh secara signifikan pada cost atau biaya rumah sakit adalah age, BMI, children, smoker, dan region sedangkan jenis kelamin atau sex tidak berpengaruh secara signifikan.
+    - dalam uji hipotesis uji F atau uji overall untuk memastikan variabel yang digunakan dalam model berpengaruh secara bersama dihasilkan nilai p-value < 2.2e-16. dengan hipotesis nol yang menyatakan bahwa model tidak layak maka dapat dikatakan menolak hipotesis nol atau hipotesis model tidak layak digunakan tidak dapat diterima.
     
 
 ## 🧵**Link**
