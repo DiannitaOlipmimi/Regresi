@@ -110,7 +110,6 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
 3. Memvisualisasikan data untuk melihat pola data
 
 ![Alt text](Rplot01.png)
-
     Scatter plot Charges VS BMI: data memiliki pola positif pada data-data dengan nilai `BMI` tinggi dan memiliki status YES pada variabel `smoker`. artinya apabila seseorang memiliki status perokok, semakin tinggi berat badan maka biaya atau `charges` yang harus dibayarkan semakin tinggi pula.
 
 ![Alt text](Rplot02.png)
@@ -228,8 +227,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
     dari hasil regresi linier, didapatkan moodel sebagai berikut
 
     ```math
-    Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + 
-
+    Charges = -35151.14 + (257.29*Age) + (-131.11*Sex) + (332.57*BMI) + \\
     (479.37*Children) + (23820.43*Smoker) + (-353.64*region) + errors
     ```
 
