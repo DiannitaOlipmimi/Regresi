@@ -228,7 +228,7 @@ Membantuk model regresi dari data yang tersedia dan melakukan prediksi cost biay
     dari hasil regresi linier, didapatkan moodel sebagai berikut
 
     $$
-    Charges = -35151.14 + (257.29 \cdot Age) + (-131.11 \cdot Sex) + (332.57 \cdot BMI) + \
+    Charges = -35151.14 + (257.29 \cdot Age) + (-131.11 \cdot Sex) + (332.57 \cdot BMI) + \\
     (479.37 \cdot Children) + (23820.43 \cdot Smoker) + (-353.64 \cdot region) + errors
     $$
 
